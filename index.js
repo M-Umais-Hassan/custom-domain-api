@@ -6,7 +6,7 @@ app.use((req, res, next) => {
   let dbDomains = [
     "example.com",
     "example123.com",
-    "custom-testing-api-2",
+    "custom-testing-api-2.herokuapp.com",
     "localhost",
     "custom-domain-api.herokuapp.com",
   ];
