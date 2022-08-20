@@ -8,7 +8,7 @@ app.use((req, res, next) => {
     "example123.com",
     "custom-testing-api-2",
     "localhost",
-    "custom-domain-api",
+    "custom-domain-api.herokuapp.com",
   ];
   if (dbDomains.includes(req.hostname)) {
     return next();
