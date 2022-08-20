@@ -1,5 +1,4 @@
 const express = require("express");
-var vhost = require("vhost");
 
 const app = express();
 
@@ -14,7 +13,7 @@ app.use((req, res, next) => {
   if (dbDomains.includes(req.hostname)) {
     return next();
   } else {
-    res.send("Your domain is not configured with our server");
+    res.send(`Your domain ${req.hostname} is not configured with our server`);
   }
 });
 
